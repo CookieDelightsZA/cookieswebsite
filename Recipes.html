@@ -13,7 +13,9 @@
         header {
             background-color: #543D26;
             padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         h1 {
@@ -22,11 +24,33 @@
             margin: 0;
         }
         
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        
+        .search-input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #543D26;
+            width: 300px;
+        }
+        
+        .search-button {
+            background-color: #FFEEDD;
+            color: #543D26;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        
         .recipe-container {
-            max-width: 800px;
+            max-width: 1500px;
             margin: 0 auto;
-            padding: 40px;
-            text-align: center;
+            padding: 20px;
+            text-align: left;
         }
         
         h2 {
@@ -63,6 +87,7 @@
             margin-top: 20px;
             padding: 10px 20px;
             transition: background-color 0.3s ease;
+            text-decoration: none;
         }
         
         .home-button:hover {
@@ -85,59 +110,119 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #543D26;
-            color: #FFFFFF;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
+        }
+        
+        .search-result {
+            margin: 5px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Cookie Delights Recipes</h1>
+        <h1>Cookie Delights Recipes </h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search recipes...">
+            <button id="searchButton" class="search-button">Search</button>
+        </div>
     </header>
     <div class="recipe-container">
         <div class="recipe-category">
             <h2>Traditional Favorites</h2>
-            <button class="recipe-button" onclick="location.href='Recipes/Butter Cookies.html'">Butter Cookies</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Almond Biscotti.html'">Almond Biscotti</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Molasses Cookies.html'">Molasses Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Butter%20Cookies.html'">Butter Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Almond%20Biscotti.html'">Almond Biscotti</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Molasses%20Cookies.html'">Molasses Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Peanut%20Butter%20Cookies.html'">Peanut Butter Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Oatmeal%20Raisin.html'">Oatmeal Raisin Cookies</button>
         </div>
         
         <div class="recipe-category">
             <h2>International Delights</h2>
-            <button class="recipe-button" onclick="location.href='Recipes/Alfajores.html'">Alfajores</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Anzac Biscuits.html'">Anzac Biscuits</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Pizzelle.html'">Pizzelle</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Anzac%20Biscuits.html'">Anzac Biscuits</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Pizzelle.html'">Pizzelle</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/French%20Macarons.html'">French Macarons</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Italian%20Cannoli%20Cookies.html'">Italian Cannoli Cookies</button>
         </div>
-        
         <div class="recipe-category">
             <h2>Chocolate Lovers' Paradise</h2>
-            <button class="recipe-button" onclick="location.href='Recipes/Double Chocolate Chip Cookies.html'">Double Chocolate Chip Cookies</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Chocolate Crinkle Cookies.html'">Chocolate Crinkle Cookies</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Chocolate Thumbprint Cookies.html'">Chocolate Thumbprint Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Double%20Chocolate%20Chip%20Cookies.html'">Double Chocolate Chip Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Chocolate%20Crinkle%20Cookies.html'">Chocolate Crinkle Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Chocolate%20Thumbprint%20Cookies.html'">Chocolate Thumbprint Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Triple%20Chocolate%20Cookies.html'">Triple Chocolate Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Chocolate-Dipped%20Shortbread%20Cookies.html'">Chocolate-Dipped Shortbread Cookies</button>
         </div>
         
         <div class="recipe-category">
             <h2>Nutty Indulgences</h2>
-            <button class="recipe-button" onclick="location.href='Recipes/Pecan Sandies.html'">Pecan Sandies</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Hazelnut Biscotti.html'">Hazelnut Biscotti</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Pistachio Cranberry Cookies.html'">Pistachio Cranberry Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Pecan%20Sandies.html'">Pecan Sandies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Hazelnut%20Biscotti.html'">Hazelnut Biscotti</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Pistachio%20Cranberry%20Cookies.html'">Pistachio Cranberry Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Macadamia%20Nut%20Cookies.html'">Macadamia Nut Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Walnut%20Chocolate%20Chunk%20Cookies.html'">Walnut Chocolate Chunk Cookies</button>
         </div>
         
         <div class="recipe-category">
             <h2>Unique and Exotic Flavors</h2>
-            <button class="recipe-button" onclick="location.href='Recipes/Matcha Green Tea Cookies.html'">Matcha Green Tea Cookies</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Lavender Shortbread Cookies.html'">Lavender Shortbread Cookies</button>
-            <button class="recipe-button" onclick="location.href='Recipes/Cardamom Rose Cookies.html'">Cardamom Rose Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Matcha%20Green%20Tea%20Cookies.html'">Matcha Green Tea Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Lavender%20Shortbread%20Cookies.html'">Lavender Shortbread Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Cardamom%20Rose%20Cookies.html'">Cardamom Rose Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Coconut%20Lime%20Cookies.html'">Coconut Lime Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Spiced%20Chai%20Cookies.html'">Spiced Chai Cookies</button>
         </div>
-        
-        <button class="home-button" onclick="location.href='Cookie Website.html'">Home</button>
+		
+        <div class="recipe-category">
+            <h2>A-List Cookies</h2>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/David%20Beckhams%20Salted%20Caramel%20Cookies.html'">David Beckham's Salted Caramel Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Kylie%20Jenners%20Funfetti%20Cookies.html'">Kylie Jenner's Funfetti Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Ryan%20Reynolds%20Maple%20Bacon%20Cookies.html'">Ryan Reynolds' Maple Bacon Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Gigi%20Hadids%20Coconut%20Macaroons.html'">Gigi Hadid's Coconut Macaroons</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Selena%20Gomez%20Snickerdoodle%20Cookies.html'">Selena Gomez's Snickerdoodle Cookies</button>
+        </div>
+		
+        <div class="recipe-category">
+            <h2>Doggy Treats</h2>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Dog/Peanut%20Butter%20and%20Pumpkin%20Cookies%20DOGS%20.html'">Peanut Butter and Pumpkin Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Dog/Cheesy%20Oatmeal%20Cookies%20DOGS.html'">Cheesy Oatmeal Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Dog/Chicken%20and%20Rice%20Cookies.html'">Chicken and Rice Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Dog/Banana%20and%20Honey%20Cookies%20DOGS.html'">Banana and Honey Cookies</button>
+            <button class="recipe-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes/Dog/Apple%20and%20Carrot%20Cookies%20DOGS.html'">Apple and Carrot Cookies</button>
+        </div>
+        <button class="home-button" onclick="location.href='file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Cookie%20Website.html'">Home</button>
     </div>
     
     <footer>
         <p>Cookie Delights &copy; 2023 | All Rights Reserved</p>
     </footer>
+    <script>
+        const recipeContainer = document.querySelector('.recipe-container');
+        const searchInput = document.getElementById('searchInput');
+        const recipeButtons = Array.from(document.getElementsByClassName('recipe-button'));
+        const recipeButtonsContainer = document.querySelector('.recipe-category');
+
+        recipeContainer.addEventListener('click', (event) => {
+          if (event.target.matches('.recipe-button')) {
+            // Handle button click here
+          }
+        });
+
+        searchInput.addEventListener('input', () => {
+          const searchQuery = searchInput.value.toLowerCase();
+
+          recipeButtons.forEach((button) => {
+            const buttonText = button.textContent.toLowerCase();
+            if (buttonText.includes(searchQuery)) {
+              button.style.display = 'inline-block';
+            } else {
+              button.style.display = 'none';
+            }
+          });
+
+          // Show the recipe category container if there are matching buttons
+          recipeButtonsContainer.style.display = hasMatchingButtons() ? 'block' : 'none';
+        });
+
+        function hasMatchingButtons() {
+          return recipeButtons.some((button) => button.style.display !== 'none');
+        }
+    </script>
 </body>
 </html>
