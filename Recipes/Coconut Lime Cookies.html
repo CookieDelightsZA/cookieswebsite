@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coconut Lime Cookies Recipe</title>
+    <style>
+        body {
+            background-color: #ffeedd; /* Soft pastel peach */
+            color: #543d26; /* Rich brown */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #543d26; /* Rich brown */
+        }
+
+        .container {
+            background-color: #fff7f0; /* Creamy white */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .ingredient-list,
+        .instructions {
+            margin-bottom: 20px;
+        }
+
+        .back-button,
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            background-color: #543D26;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-button {
+            right: 20px;
+        }
+
+        .print-button {
+            right: 100px;
+        }
+
+        /* Comment Section Styles */
+        .comment-section {
+            margin-top: 40px;
+        }
+
+        .comment-form {
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Adjusted Comment Box */
+        .comment-input {
+            width: 100%;
+            height: 90px;
+            resize: vertical;
+        }
+
+        .comment-submit {
+            background-color: #543D26;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-submit:hover {
+            background-color: #7D5F3F;
+        }
+
+        /* Print Styles */
+        @media print {
+            .back-button,
+            .print-button {
+                display: none;
+            }
+
+            .comment-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coconut Lime Cookies</h1>
+
+    <h2>Ingredients:</h2>
+    <ul class="ingredient-list">
+      <li>1 cup unsalted butter, softened</li>
+      <li>1 cup granulated sugar</li>
+      <li>1 large egg</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>2 cups all-purpose flour</li>
+      <li>1/2 teaspoon baking powder</li>
+      <li>1/2 teaspoon salt</li>
+      <li>Zest of 2 limes</li>
+      <li>1 cup sweetened shredded coconut</li>
+      <li>Optional: Lime glaze (powdered sugar and lime juice)</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol class="instructions">
+      <li>In a large mixing bowl, cream together the softened butter and granulated sugar until light and fluffy.</li>
+      <li>Add the egg and vanilla extract to the butter mixture and mix until well combined.</li>
+      <li>In a separate bowl, whisk together the flour, baking powder, and salt. Gradually add the dry ingredients to the butter mixture, mixing until just combined.</li>
+      <li>Add the lime zest and shredded coconut to the dough and mix until evenly distributed.</li>
+      <li>Cover the dough and refrigerate for at least 1 hour or until firm.</li>
+      <li>Preheat the oven to 350°F (175°C). Line baking sheets with parchment paper.</li>
+      <li>Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart.</li>
+      <li>Bake for 10-12 minutes or until the edges are lightly golden. Let the cookies cool on the baking sheets for a few minutes, then transfer them to a wire rack to cool completely.</li>
+      <li>If desired, drizzle the cooled cookies with a lime glaze made from powdered sugar and lime juice.</li>
+      <li>Enjoy these delightful coconut lime cookies with their tropical flavor!</li>
+    </ol>
+    
+    <!-- Comment Section -->
+    <div class="comment-section">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" class="comment-input" rows="4" required></textarea>
+        
+        <input type="submit" value="Post Comment" class="comment-submit">
+      </form>
+      
+      <h2>Comments</h2>
+      
+      <div class="comment">
+        <p class="comment-author">Carlos</p>
+        <p>These coconut lime cookies are a tropical delight! The combination of coconut and lime is refreshing and delicious.</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Isabella</p>
+        <p>I made these coconut lime cookies for a summer party, and they were a hit! Everyone loved the tropical flavor.</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Juan</p>
+        <p>Thank you for sharing this recipe! These coconut lime cookies transport me to a sunny beach with every bite.</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Sofia</p>
+        <p>These coconut lime cookies have the perfect balance of sweetness and tanginess. They're a perfect summer treat.</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Diego</p>
+        <p>I can't get enough of these coconut lime cookies. The lime zest adds a refreshing twist to the classic cookie.</p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <a href="file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes.html" class="back-button">Back</a>
+  <a href="#" class="print-button" onclick="window.print()">Print</a>
+</body>
+</html>

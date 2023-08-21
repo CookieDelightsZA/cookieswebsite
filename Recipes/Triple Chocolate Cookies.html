@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Triple Chocolate Cookies Recipe</title>
+    <style>
+        body {
+            background-color: #ffeedd; /* Soft pastel peach */
+            color: #543d26; /* Rich brown */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #543d26; /* Rich brown */
+        }
+
+        .container {
+            background-color: #fff7f0; /* Creamy white */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .ingredient-list,
+        .instructions {
+            margin-bottom: 20px;
+        }
+
+        .back-button,
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            background-color: #543D26;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-button {
+            right: 20px;
+        }
+
+        .print-button {
+            right: 100px;
+        }
+
+        /* Comment Section Styles */
+        .comment-section {
+            margin-top: 40px;
+        }
+
+        .comment-form {
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Adjusted Comment Box */
+        .comment-input {
+            width: 100%;
+            height: 90px;
+            resize: vertical;
+        }
+
+        .comment-submit {
+            background-color: #543D26;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-submit:hover {
+            background-color: #7D5F3F;
+        }
+
+        /* Print Styles */
+        @media print {
+            .back-button,
+            .print-button {
+                display: none;
+            }
+
+            .comment-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Triple Chocolate Cookies</h1>
+
+    <h2>Ingredients:</h2>
+    <ul class="ingredient-list">
+      <li>1 cup unsalted butter, softened</li>
+      <li>1 cup granulated sugar</li>
+      <li>1 cup brown sugar</li>
+      <li>2 large eggs</li>
+      <li>2 teaspoons vanilla extract</li>
+      <li>2 1/2 cups all-purpose flour</li>
+      <li>1/2 cup cocoa powder</li>
+      <li>1 teaspoon baking soda</li>
+      <li>1/2 teaspoon salt</li>
+      <li>1 cup semisweet chocolate chips</li>
+      <li>1 cup white chocolate chips</li>
+      <li>1 cup milk chocolate chips</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol class="instructions">
+      <li>In a large mixing bowl, cream together the softened butter, granulated sugar, and brown sugar until light and fluffy.</li>
+      <li>Add the eggs one at a time, beating well after each addition. Stir in the vanilla extract.</li>
+      <li>In a separate bowl, whisk together the flour, cocoa powder, baking soda, and salt. Gradually add the dry ingredients to the butter mixture, mixing until just combined.</li>
+      <li>Stir in the semisweet chocolate chips, white chocolate chips, and milk chocolate chips until evenly distributed in the dough.</li>
+      <li>Cover the dough and refrigerate for at least 1 hour or overnight.</li>
+      <li>Preheat the oven to 350°F (175°C). Line baking sheets with parchment paper.</li>
+      <li>Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart.</li>
+      <li>Bake for 10-12 minutes or until the edges are set and the centers are slightly soft. Remove from the oven and let the cookies cool on the baking sheets for 5 minutes, then transfer them to a wire rack to cool completely.</li>
+      <li>Enjoy these decadent triple chocolate cookies that are sure to satisfy your chocolate cravings!</li>
+    </ol>
+    
+    <!-- Comment Section -->
+    <div class="comment-section">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" class="comment-input" rows="4" required></textarea>
+        
+        <input type="submit" value="Post Comment" class="comment-submit">
+      </form>
+      
+      <h2>Comments</h2>
+      
+      <div class="comment">
+        <p class="comment-author">Carlos</p>
+        <p>These triple chocolate cookies are a chocolate lover's dream! They're rich, indulgent, and absolutely delicious.</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Isabella</p>
+        <p>I made these triple chocolate cookies for a bake sale, and they were a huge hit! People couldn't resist them.</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Juan</p>
+        <p>Thank you for sharing this recipe! These triple chocolate cookies are a favorite in my family. They disappear in no time!</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Sofia</p>
+        <p>These triple chocolate cookies are the perfect treat for any chocoholic. Each bite is pure chocolatey bliss.</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Diego</p>
+        <p>I can't get enough of these triple chocolate cookies. They're the ultimate chocolate indulgence!</p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <a href="file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes.html" class="back-button">Back</a>
+  <a href="#" class="print-button" onclick="window.print()">Print</a>
+</body>
+</html>

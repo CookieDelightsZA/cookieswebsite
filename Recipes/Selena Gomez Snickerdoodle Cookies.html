@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selena Gomez's Snickerdoodle Cookies</title>
+    <style>
+        body {
+            background-color: #ffeedd; /* Soft pastel peach */
+            color: #543d26; /* Rich brown */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #543d26; /* Rich brown */
+        }
+
+        .container {
+            background-color: #fff7f0; /* Creamy white */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .ingredient-list,
+        .instructions {
+            margin-bottom: 20px;
+        }
+
+        .back-button,
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            background-color: #543D26;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-button {
+            right: 20px;
+        }
+
+        .print-button {
+            right: 100px;
+        }
+
+        /* Comment Section Styles */
+        .comment-section {
+            margin-top: 40px;
+        }
+
+        .comment-form {
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Adjusted Comment Box */
+        .comment-input {
+            width: 100%;
+            height: 90px;
+            resize: vertical;
+        }
+
+        .comment-submit {
+            background-color: #543D26;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-submit:hover {
+            background-color: #7D5F3F;
+        }
+
+        /* Print Styles */
+        @media print {
+            .back-button,
+            .print-button {
+                display: none;
+            }
+
+            .comment-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Selena Gomez's Snickerdoodle Cookies</h1>
+
+    <h2>Ingredients:</h2>
+    <ul class="ingredient-list">
+      <li>1 cup unsalted butter, softened</li>
+      <li>1 1/2 cups granulated sugar</li>
+      <li>2 large eggs</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>2 3/4 cups all-purpose flour</li>
+      <li>2 teaspoons cream of tartar</li>
+      <li>1 teaspoon baking soda</li>
+      <li>1/4 teaspoon salt</li>
+      <li>2 tablespoons granulated sugar</li>
+      <li>2 teaspoons ground cinnamon</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol class="instructions">
+      <li>Preheat the oven to 375°F (190°C).</li>
+      <li>In a large bowl, cream together the butter and 1 1/2 cups of granulated sugar until light and fluffy.</li>
+      <li>Beat in the eggs one at a time, followed by the vanilla extract.</li>
+      <li>In a separate bowl, whisk together the flour, cream of tartar, baking soda, and salt. Gradually add the dry ingredients to the wet ingredients, mixing until just combined.</li>
+      <li>In a small bowl, combine the remaining 2 tablespoons of granulated sugar and the ground cinnamon.</li>
+      <li>Shape the dough into 1-inch balls and roll them in the cinnamon-sugar mixture.</li>
+      <li>Place the coated dough balls on a baking sheet and bake for 10-12 minutes or until set and slightly cracked.</li>
+      <li>Allow the cookies to cool on the baking sheet for a few minutes, then transfer them to a wire rack to cool completely.</li>
+    </ol>
+    
+    <!-- Comment Section -->
+    <div class="comment-section">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" class="comment-input" rows="4" required></textarea>
+        
+        <input type="submit" value="Post Comment" class="comment-submit">
+      </form>
+      
+      <h2>Comments</h2>
+      <div class="comment">
+        <p class="comment-author">Taylor Swift</p>
+        <p>Selena, these coconut macaroons are pure magic! ✨🥥 Just like our friendship, they bring so much sweetness into my life. Let's have a baking party and create unforgettable memories together. You bring the cookies, and I'll bring the dance moves! 💃🍪 #SweetTreatsAndSquadGoals</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Demi Lovato</p>
+        <p>Hey Selena, these coconut macaroons are making my taste buds go wild! 🥥😋 They're like a delicious reminder of our lifelong friendship. Let's grab a batch, have a cozy movie night, and reminisce about all the crazy adventures we've had. Love you to the moon and back! 🌙🍪 #CookieCravingWithMyBFF</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Vanessa Hudgens</p>
+        <p>Selena, these coconut macaroons are giving me major tropical vibes! 🥥🌴 Just like our friendship, they transport me to a sunny paradise. Can't wait to indulge in these yummy treats together, laugh uncontrollably, and create more incredible memories. Cheers to our unbreakable bond! 🥂🍪 #IslandBakingEscapade</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Taylor Lautner</p>
+        <p>Selena, these coconut macaroons are howling good! 🥥🐺 A perfect snack for our longtime friendship. Let's sink our teeth into these delightful treats, watch our favorite movies, and reminisce about the good ol' days. Your friendship is forever cherished! 🍪❤️ #TeamCookiesAndForeverFriends</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Jennifer Aniston</p>
+        <p>Selena, these coconut macaroons are a taste of pure bliss! 🥥😍 Just like our friendship, they bring so much joy into my life. Let's savor these delectable treats, share laughter, and enjoy our girls' nights in. Cheers to many more moments of love and laughter together! 🍷🍪 #CookieLoveWithMyBFF</p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <a href="file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes.html" class="back-button">Back</a>
+  <a href="#" class="print-button" onclick="window.print()">Print</a>
+</body>
+</html>
