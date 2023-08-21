@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizzelle Recipe</title>
+    <style>
+        body {
+            background-color: #ffeedd; /* Soft pastel peach */
+            color: #543d26; /* Rich brown */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #543d26; /* Rich brown */
+        }
+
+        .container {
+            background-color: #fff7f0; /* Creamy white */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .ingredient-list,
+        .instructions {
+            margin-bottom: 20px;
+        }
+
+        .back-button,
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            background-color: #543D26;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-button {
+            right: 20px;
+        }
+
+        .print-button {
+            right: 100px;
+        }
+
+        /* Comment Section Styles */
+        .comment-section {
+            margin-top: 40px;
+        }
+
+        .comment-form {
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Adjusted Comment Box */
+        .comment-input {
+            width: 100%;
+            height: 90px;
+            resize: vertical;
+        }
+
+        .comment-submit {
+            background-color: #543D26;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-submit:hover {
+            background-color: #7D5F3F;
+        }
+
+        /* Print Styles */
+        @media print {
+            .back-button,
+            .print-button {
+                display: none;
+            }
+
+            .comment-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pizzelle</h1>
+
+    <h2>Ingredients:</h2>
+    <ul class="ingredient-list">
+      <li>3 large eggs</li>
+      <li>3/4 cup granulated sugar</li>
+      <li>1/2 cup unsalted butter, melted and cooled</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>1 3/4 cups all-purpose flour</li>
+      <li>2 teaspoons baking powder</li>
+      <li>1/4 teaspoon salt</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol class="instructions">
+      <li>In a large bowl, beat the eggs and sugar until well combined.</li>
+      <li>Add the melted butter and vanilla extract to the egg mixture, and mix until smooth.</li>
+      <li>In a separate bowl, whisk together the all-purpose flour, baking powder, and salt.</li>
+      <li>Add the dry ingredients to the wet ingredients and mix until a smooth batter forms.</li>
+      <li>Preheat the pizzelle iron according to the manufacturer's instructions.</li>
+      <li>Drop about 1 tablespoon of batter onto the center of each patterned side of the preheated iron.</li>
+      <li>Cook the pizzelle according to the manufacturer's instructions, usually for about 30 seconds to 1 minute, or until golden brown.</li>
+      <li>Use a spatula to carefully remove the pizzelle from the iron and transfer them to a wire rack to cool completely.</li>
+      <li>Repeat with the remaining batter until all the pizzelle are cooked.</li>
+      <li>Enjoy these traditional Italian wafer cookies, either flat or rolled into cannoli shapes!</li>
+    </ol>
+    
+    <!-- Comment Section -->
+    <div class="comment-section">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" class="comment-input" rows="4" required></textarea>
+        
+        <input type="submit" value="Post Comment" class="comment-submit">
+      </form>
+      
+      <h2>Comments</h2>
+      
+      <div class="comment">
+        <p class="comment-author">Maria</p>
+        <p>These pizzelle bring back memories of my childhood. My grandmother used to make them for special occasions. Thank you for sharing the recipe!</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Antonio</p>
+        <p>I love making pizzelle during the holidays. They're a family favorite and always disappear quickly!</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Gina</p>
+        <p>These pizzelle are so addictive! I can't stop eating them. Thank you for the recipe!</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Marco</p>
+        <p>My friends and I had a pizzelle-making competition, and your recipe helped me win! The cookies were a hit.</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Francesca</p>
+        <p>I added a touch of anise extract to the batter, and it gave the pizzelle an extra layer of flavor. Delicious!</p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <a href="file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes.html" class="back-button">Back</a>
+  <a href="#" class="print-button" onclick="window.print()">Print</a>
+</body>
+</html>

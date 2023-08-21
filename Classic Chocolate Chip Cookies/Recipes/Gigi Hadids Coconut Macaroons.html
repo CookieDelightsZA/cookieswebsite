@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gigi Hadid's Coconut Macaroons</title>
+    <style>
+        body {
+            background-color: #ffeedd; /* Soft pastel peach */
+            color: #543d26; /* Rich brown */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #543d26; /* Rich brown */
+        }
+
+        .container {
+            background-color: #fff7f0; /* Creamy white */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .ingredient-list,
+        .instructions {
+            margin-bottom: 20px;
+        }
+
+        .back-button,
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            background-color: #543D26;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-button {
+            right: 20px;
+        }
+
+        .print-button {
+            right: 100px;
+        }
+
+        /* Comment Section Styles */
+        .comment-section {
+            margin-top: 40px;
+        }
+
+        .comment-form {
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Adjusted Comment Box */
+        .comment-input {
+            width: 100%;
+            height: 90px;
+            resize: vertical;
+        }
+
+        .comment-submit {
+            background-color: #543D26;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-submit:hover {
+            background-color: #7D5F3F;
+        }
+
+        /* Print Styles */
+        @media print {
+            .back-button,
+            .print-button {
+                display: none;
+            }
+
+            .comment-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gigi Hadid's Coconut Macaroons</h1>
+
+    <h2>Ingredients:</h2>
+    <ul class="ingredient-list">
+      <li>3 cups shredded coconut</li>
+      <li>3/4 cup sweetened condensed milk</li>
+      <li>2 teaspoons vanilla extract</li>
+      <li>2 large egg whites</li>
+      <li>1/4 teaspoon salt</li>
+      <li>Optional: melted dark chocolate for drizzling</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol class="instructions">
+      <li>Preheat the oven to 325°F (160°C).</li>
+      <li>In a large bowl, combine the shredded coconut, sweetened condensed milk, and vanilla extract.</li>
+      <li>In a separate bowl, beat the egg whites and salt until stiff peaks form.</li>
+      <li>Gently fold the beaten egg whites into the coconut mixture until well combined.</li>
+      <li>Drop spoonfuls of the mixture onto a baking sheet lined with parchment paper.</li>
+      <li>Bake for 20-25 minutes or until lightly golden.</li>
+      <li>Allow the macaroons to cool on the baking sheet for a few minutes, then transfer them to a wire rack to cool completely. Drizzle with melted dark chocolate, if desired.</li>
+    </ol>
+    
+    <!-- Comment Section -->
+    <div class="comment-section">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" class="comment-input" rows="4" required></textarea>
+        
+        <input type="submit" value="Post Comment" class="comment-submit">
+      </form>
+      
+      <h2>Comments</h2>
+      
+      <div class="comment">
+        <p class="comment-author">Bella Hadid</p>
+        <p>Sis, these coconut macaroons are giving me life! 🥥🥥 Who knew our baking skills could rival our runway walks? 😜 Can't wait to steal a few (or more) from the cookie jar when you're not looking. Love you, cookie queen! 🍪💖 #SisterBakingGoals</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Zayn Malik</p>
+        <p>Gigi, these coconut macaroons are my new obsession! 😍🥥 They're even sweeter than your smile, and that's saying something. I'll gladly be your taste tester any time, anywhere. Keep the treats coming, love! 🍪💕 #SweetToothApproved</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Taylor Swift</p>
+        <p>Gigi, these coconut macaroons are pure enchantment! ✨🥥 They're like a taste of paradise in every bite. Let's have a baking extravaganza, dance like no one's watching, and create a musical masterpiece with these cookie vibes. It's a recipe for epic memories! 🎵🍪 #BakingTunesAndBesties</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Kendall Jenner</p>
+        <p>Hey, these coconut macaroons are runway-worthy! 🥥💃 They're strutting their stuff with flavor and style. Let's turn the kitchen into a baking catwalk, rock some apron couture, and serve up these fabulous treats to the world. We'll make fashionistas out of cookie lovers! 👠🍪 #FashionablyDelicious</p>
+      </div>
+      
+      <div class="comment">
+        <p class="comment-author">Tommy Hilfiger</p>
+        <p>My goodness, these coconut macaroons are a taste sensation that deserves a standing ovation! 🥥👏 The recipe is as timeless and stylish as your fashion creations. Let's collaborate on a 'Macaroon Couture' collection and take the culinary world by storm. Delicious treats with a touch of fashion flair! 👗🍪 #SweetFashionAffair</p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <a href="file:///C:/Users/illas/Desktop/CAT/Notepad%20++/Cookie%20Website/Recipes.html" class="back-button">Back</a>
+  <a href="#" class="print-button" onclick="window.print()">Print</a>
+</body>
+</html>
