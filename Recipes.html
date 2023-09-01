@@ -224,5 +224,28 @@
           return recipeButtons.some((button) => button.style.display !== 'none');
         }
     </script>
+	// Save Scroll Position
+<script>
+    // Function to save the scroll position in local storage
+    function saveScrollPosition() {
+        const scrollPosition = window.scrollY;
+        localStorage.setItem('scrollPosition', scrollPosition);
+    }
+
+    // Function to restore the scroll position from local storage
+    function restoreScrollPosition() {
+        const scrollPosition = localStorage.getItem('scrollPosition');
+        if (scrollPosition !== null) {
+            window.scrollTo(0, scrollPosition);
+        }
+    }
+
+    // Save the scroll position when the page is unloaded
+    window.addEventListener('beforeunload', saveScrollPosition);
+
+    // Restore the scroll position when the page is loaded
+    window.addEventListener('load', restoreScrollPosition);
+</script>
+
 </body>
 </html>
