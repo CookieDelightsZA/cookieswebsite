@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Almond Biscotti Recipe</title>
+      <style>
+        body {
+            background-color: #ffeedd; /* Soft pastel peach */
+            color: #543d26; /* Rich brown */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #543d26; /* Rich brown */
+        }
+
+        .container {
+            background-color: #fff7f0; /* Creamy white */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .ingredient-list,
+        .instructions {
+            margin-bottom: 20px;
+        }
+
+        .back-button,
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            background-color: #543D26;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-button {
+            right: 20px;
+        }
+
+        .print-button {
+            right: 100px;
+        }
+
+        /* Comment Section Styles */
+        .comment-section {
+            margin-top: 40px;
+        }
+
+        .comment-form {
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Adjusted Comment Box */
+        .comment-input {
+            width: 100%;
+            height: 90px;
+            resize: vertical;
+        }
+
+        .comment-submit {
+            background-color: #543D26;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-submit:hover {
+            background-color: #7D5F3F;
+        }
+
+        /* Print Styles */
+        @media print {
+            .back-button,
+            .print-button {
+                display: none;
+            }
+
+            .comment-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quinoa Almond Butter Cookies</h1>
+
+    <h2>Ingredients:</h2>
+    <ul class="ingredient-list">
+      <li>1 cup cooked quinoa</li>
+      <li>1/2 cup almond butter</li>
+      <li>1/4 cup honey</li>
+      <li>1/4 cup dried cranberries</li>
+      <li>1/4 cup chopped almonds</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>1/2 teaspoon baking powder</li>
+      <li>Pinch of salt</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol class="instructions">
+      <li>Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper or lightly grease it.</li>
+      <li>In a large mixing bowl, combine the cooked quinoa, almond butter, honey, dried cranberries, chopped almonds, vanilla extract, baking powder, and a pinch of salt. Mix until all ingredients are well combined.</li>
+      <li>Using a spoon or your hands, scoop out portions of the cookie dough and place them on the prepared baking sheet. Flatten and shape each cookie with your fingers to your desired thickness and shape.</li>
+      <li>Bake for 12-15 minutes, or until the cookies are lightly golden around the edges.</li>
+      <li>Remove the cookies from the oven and let them cool on the baking sheet for a few minutes. Then transfer them to a wire rack to cool completely.</li>
+      <li>Once the cookies are completely cool, they are ready to be enjoyed. These Quinoa Almond Butter Cookies are a delightful and nutritious treat.</li>
+    </ol>
+    
+        <h2>Comments</h2>
+            <script defer src="https://cdn.commento.io/js/commento.js"></script>
+            <div id="commento"></div>     
+
+  </div>
+  
+  <a href="../Recipes.html" class="back-button">Back</a>
+  <a href="#" class="print-button" onclick="window.print()">Print</a>
+</body>
+</html>
