@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Almond Biscotti Recipe</title>
+      <style>
+        body {
+            background-color: #ffeedd; /* Soft pastel peach */
+            color: #543d26; /* Rich brown */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #543d26; /* Rich brown */
+        }
+
+        .container {
+            background-color: #fff7f0; /* Creamy white */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .ingredient-list,
+        .instructions {
+            margin-bottom: 20px;
+        }
+
+        .back-button,
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            background-color: #543D26;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-button {
+            right: 20px;
+        }
+
+        .print-button {
+            right: 100px;
+        }
+
+        /* Comment Section Styles */
+        .comment-section {
+            margin-top: 40px;
+        }
+
+        .comment-form {
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comment p {
+            margin: 0;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Adjusted Comment Box */
+        .comment-input {
+            width: 100%;
+            height: 90px;
+            resize: vertical;
+        }
+
+        .comment-submit {
+            background-color: #543D26;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-submit:hover {
+            background-color: #7D5F3F;
+        }
+
+        /* Print Styles */
+        @media print {
+            .back-button,
+            .print-button {
+                display: none;
+            }
+
+            .comment-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Oatmeal Banana Breakfast Cookies</h1>
+
+    <h2>Ingredients:</h2>
+    <ul class="ingredient-list">
+      <li>2 ripe bananas, mashed</li>
+      <li>1 1/2 cups rolled oats</li>
+      <li>1/4 cup honey or maple syrup</li>
+      <li>1/4 cup almond butter or peanut butter</li>
+      <li>1/2 teaspoon ground cinnamon</li>
+      <li>1/4 cup dark chocolate chips (optional)</li>
+      <li>1/4 cup chopped nuts (such as walnuts or almonds, optional)</li>
+      <li>1/4 cup dried fruits (such as raisins or cranberries, optional)</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>Pinch of salt</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol class="instructions">
+      <li>Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper or lightly grease it to prevent sticking.</li>
+      <li>In a large mixing bowl, mash the ripe bananas until they are smooth. Add the honey or maple syrup, almond butter or peanut butter, and vanilla extract. Stir everything together until well combined.</li>
+      <li>Add the rolled oats, ground cinnamon, and a pinch of salt to the wet mixture. Mix well to combine. If you're using optional ingredients like dark chocolate chips, chopped nuts, or dried fruits, add them to the mixture and fold them in.</li>
+      <li>Using a spoon or your hands, scoop out portions of the cookie dough and place them on the prepared baking sheet. Flatten and shape each cookie with your fingers to your desired thickness and shape, as these cookies won't spread much during baking.</li>
+      <li>Place the baking sheet in the preheated oven and bake for about 12-15 minutes, or until the cookies turn golden brown around the edges.</li>
+      <li>Remove the cookies from the oven and let them cool on the baking sheet for a few minutes. Then transfer them to a wire rack to cool completely.</li>
+      <li>Once the cookies are completely cool, they are ready to be enjoyed. They make a perfect grab-and-go breakfast or snack option.</li>
+    </ol>
+    
+        <h2>Comments</h2>
+            <script defer src="https://cdn.commento.io/js/commento.js"></script>
+            <div id="commento"></div>     
+
+  </div>
+  
+  <a href="../Recipes.html" class="back-button">Back</a>
+  <a href="#" class="print-button" onclick="window.print()">Print</a>
+</body>
+</html>
